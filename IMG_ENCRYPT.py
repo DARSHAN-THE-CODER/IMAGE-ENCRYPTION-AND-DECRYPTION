@@ -13,7 +13,7 @@ def encrypt_image():
     file1=filedialog.askopenfile(mode='r',filetypes=[('jpg file','*.jpg'),('png file','*.png')])
     if file1 is not None:
             file_name=file1.name
-            key=entry1.get(1.0,END)
+            key=entry1.get(1.0)
             k=Label(root,text="Image successfully encrypted or decrypted",font=("STENCIL",20))
             k.pack()
             root.after(4000,k.destroy)
